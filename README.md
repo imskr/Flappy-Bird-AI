@@ -1,2 +1,2 @@
-# AI-Snake-Game :snake:
-Artificial Intelligence based Snake Game
+# Flappy-Bird-AI :baby_chick:
+Artificial Intelligence based Flappy Bird Game
