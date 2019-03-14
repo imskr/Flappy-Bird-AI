@@ -1,14 +1,49 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Flappy Bird</title>
+<html>
 
-    <script src = "phaser.min.js"></script>
-    <script src = "synaptic.min.js"></script>
-    <script src = "game.js"></script>
-    
-  </head>
-  <body>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">  
+  <link href="https://fonts.googleapis.com/css?family=Courgette|Gloria+Hallelujah|Righteous|Satisfy" rel="stylesheet">
+  <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
+  <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script language="javascript" type="text/javascript" src="neuralnetwork/nn.js"></script>
+  <script language="javascript" type="text/javascript" src="neuralnetwork/matrix.js"></script>
+  <script language="javascript" type="text/javascript" src="sketch.js"></script>
+  <script language="javascript" type="text/javascript" src="ga.js"></script>
+  <script language="javascript" type="text/javascript" src="bird.js"></script>
+  <script language="javascript" type="text/javascript" src="pipe.js"></script>
+</head>
+
+<body class="back">
+  <h1>Flappy Bird (AI)</h1>
+  <p>
+    <span id="forkongithub"><a href="https://github.com/imskr/Flappy-Bird-AI">Fork me on GitHub</a></span>
+  </p>
+  <div id="canvascontainer"></div>
+  <div class="bg">
+    Speed: <input id="speedSlider" type="range" min="1" max="10" value="1"> <span id="speed">1</span>
+    <br/> New Score: <span id="hs">0</span>
+    <br/> High Score: <span id="ahs">0</span>
+  </div>
+  <p id="best">
+    Best Run
+  </p>
+  <p>
+    <!-- The social media icon bar -->
+    <div class="icon-bar">
+    <a href="#" class="medium"><i class="fa fa-medium"></i></a>
+    <a href="https://twitter.com/iamskr01" class="twitter"><i class="fa fa-twitter"></i></a>
+    <a href="https://github.com/imskr" class="github"><i class="fa fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/imskr" class="linkedin"><i class="fa fa-linkedin"></i></a>
+    <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+    <a href="https://imskr.github.io" class="rss"><i class="fa fa-rss"></i></a>
+    </div> 
+  </p>
+  <footer>
+      <p class="copyright">© Shubham Kumar</p>
+  </footer>
+</body>
+
+
 </html>

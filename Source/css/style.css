@@ -1,0 +1,185 @@
+h1 {
+  font-family: 'Courgette', cursive;
+  text-align: center;
+  color: green;
+}
+
+footer {
+  margin-top: 600px;
+  height: 100px;
+  width: 100%;
+  background-color: #f3f8ff;
+}
+
+p.copyright {
+  font-family: 'Righteous', cursive;
+  position: absolute;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  line-height: 40px;
+  font-size: 2.5em;
+  text-align: center;
+  bottom:0;
+  color: tomato;
+}
+
+.bg {
+  margin-top: 250px;
+  float: right;
+  margin-right: 80px;
+  font-family: 'Righteous', cursive;
+  color: tomato;
+}
+.back {
+  background: #f3f8ff;
+}
+
+.canvascontainer {
+    border-radius: 12px;
+}
+
+#best {
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    width: 12rem;
+    float: inline-start;
+}
+
+#best:focus {
+    color: #fff;
+    outline: 0;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+#best:hover {    
+    box-shadow: 0 0 15px 15px #e74c3c; 
+    inset: 20;
+}
+
+
+#forkongithub a{
+  background:#000;
+  color:#fff;
+  text-decoration:none;
+  font-family:arial,sans-serif;
+  text-align:center;
+  font-weight:bold;
+  padding:5px 40px;
+  font-size:1rem;
+  line-height:2rem;
+  position:relative;
+  transition:0.5s;
+}
+#forkongithub a:hover{
+  background:#8bffff;
+  color:#141414;
+}
+#forkongithub a::before,#forkongithub a::after{
+  content:"";
+  width:100%;
+  display:block;
+  position:absolute;
+  top:1px;
+  left:0;height:1px;
+  background:#fff;
+}
+#forkongithub a::after{
+  bottom:1px;
+  top:auto;
+}
+
+@media screen and (min-width:800px)
+{
+  #forkongithub{
+    position:fixed;
+    display:block;
+    top:0;
+    right:0;
+    width:200px;
+    overflow:hidden;
+    height:200px;
+    z-index:9999;
+  }
+  #forkongithub a{
+    width:200px;
+    position:absolute;
+    top:60px;right:-60px;
+    transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    box-shadow:4px 4px 10px rgba(0,0,0,0.8);
+  }
+}
+
+ /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+ .icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color:  	#FFC0CB;
+}
+
+.medium {
+  background: #333;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.github {
+  background: #333;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.rss {
+  background: #fcd307;
+  color: white;
+}
