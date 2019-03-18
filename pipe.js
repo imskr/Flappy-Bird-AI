@@ -1,7 +1,4 @@
 class Pipe {
-  /*setup() {
-    pipeimg = loadImage('pipeimg.png');
-  }*/
   constructor() {
 
     // How big is the empty space
@@ -32,12 +29,8 @@ class Pipe {
 
   // Draw the pipe
   show() {
-    stroke(255);
-    fill('#6bdb6b');
-    rect(this.x, 0, this.w, this.top);
-    rect(this.x, height - this.bottom, this.w, this.bottom);
-    //new Image(pipeimg, this.x, 0, this.w, this.top);
-    //new Image(pipeimg, this.x, height - this.bottom, this.w, this.bottom);
+    image(pipeBodySprite, this.x, 0, this.w, this.top);
+    image(pipePeakSprite, this.x, height - this.bottom, this.w, this.bottom);
   }
 
   // Update the pipe

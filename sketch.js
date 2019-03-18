@@ -1,4 +1,8 @@
-let bgimg;
+let bgImg;
+let bgX;
+let birdSprite;
+let pipeBodySprite;
+let pipePeakSprite;
 // How big is the population
 let totalPopulation = 500;
 // All active birds (not yet collided with pipe)
@@ -23,14 +27,19 @@ let highScore = 0;
 let runBest = false;
 let runBestButton;
 
+function preload(){
+  bgImg = loadImage('assets/background.jpg');
+  birdSprite = loadImage('assets/bird1.png');
+  pipeBodySprite = loadImage('assets/pipebg.png');
+  pipePeakSprite = loadImage('assets/pipebg.png');
+}
+
 function setup() {
-  let canvas = createCanvas(600, 400);
+  let canvas = createCanvas(700, 400);
   var x = (windowWidth - width) / 2;
   var y = (windowHeight - height) / 2;
   canvas.position(x, y);
   canvas.parent('canvascontainer');
-
-  bgimg = loadImage('assets/backg.png');
 
   // Access the interface elements
   speedSlider = select('#speedSlider');
@@ -64,7 +73,7 @@ function toggleState() {
 
 
 function draw() {
-  background(bgimg);
+  background(bgImg);
 
   // Should we speed up cycles per frame
   let cycles = speedSlider.value();

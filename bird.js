@@ -1,3 +1,4 @@
+
 // Mutation function to be passed into bird.brain
 function mutate(x) {
   if (random(1) < 0.1) {
@@ -8,22 +9,18 @@ function mutate(x) {
     return x;
   }
 }
-/* @pjs preload="birdimg.png"; */
+
 class Bird {
-  /*setup() {
-    birdimg = loadImage('birdimg.png');
-  }*/
   constructor(brain) {
     // position and size of bird
     this.x = 64;
     this.y = height / 2;
     this.r = 12;
 
-    // Gravity, lift and velocity
+    // Gravity, lift, velocity.
     this.gravity = 0.8;
     this.lift = -12;
     this.velocity = 0;
-
     // Is this a copy of another Bird or a new one?
     // The Neural Network is the bird's "brain"
     if (brain instanceof NeuralNetwork) {
@@ -46,12 +43,9 @@ class Bird {
 
   // Display the bird
   show() {
-    fill(255, 100);
-    stroke(255);
-    ellipse(this.x, this.y, this.r * 2, this.r * 2);
-    //background(birdimg);
+    image(birdSprite, this.x, this.y, this.r * 2, this.r * 2);
   }
-
+  
   // This is the key function now that decides
   // if it should jump or not jump!
   think(pipes) {
