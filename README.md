@@ -4,6 +4,10 @@ Artificial Intelligence based Flappy Bird Game
 ## LIVE: https://imskr.github.io/Flappy-Bird-AI/
 
 <p align="center">
+  <img src="assets/game.PNG" height="350">
+</p>
+
+<p align="center">
   <sub>Created by <a href="https://github.com/imskr"><strong>Shubham Kumar</strong></a>
 </p>
 
