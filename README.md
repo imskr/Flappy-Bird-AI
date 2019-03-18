@@ -8,7 +8,7 @@ Artificial Intelligence based Flappy Bird Game
 </p>
 
 <p align="center">
-<a href="https://github.com/frontbench-open-source/Data-Science-Free/blob/master/LICENSE">
+<a href="https://github.com/imskr/Flappy-Bird-AI/blob/master/LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-orange.svg?longCache=true" alt="License">
 </a>
   
