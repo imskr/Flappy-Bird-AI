@@ -1,5 +1,4 @@
 let bgImg;
-let bgX;
 let birdSprite;
 let pipeBodySprite;
 let pipePeakSprite;
