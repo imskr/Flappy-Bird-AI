@@ -38,42 +38,6 @@ p.copyright {
     border-radius: 12px;
 }
 
-#best {
-    box-sizing: border-box;
-    appearance: none;
-    background-color: transparent;
-    border: 2px solid #e74c3c;
-    border-radius: 0.6em;
-    color: #e74c3c;
-    cursor: pointer;
-    display: flex;
-    align-self: center;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1;
-    margin: 20px;
-    padding: 1.2em 2.8em;
-    text-decoration: none;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    width: 12rem;
-    float: inline-start;
-}
-
-#best:focus {
-    color: #fff;
-    outline: 0;
-    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-}
-
-#best:hover {    
-    box-shadow: 0 0 15px 15px #e74c3c; 
-    inset: 20;
-}
-
-
 #forkongithub a{
   background:#000;
   color:#fff;
@@ -182,4 +146,70 @@ p.copyright {
 .rss {
   background: #fcd307;
   color: white;
+}
+
+
+#best {
+  font-family: 'Hind Guntur', sans-serif;
+  font-size: 15px;
+  line-height: 1;
+  color: #fff;
+  letter-spacing: 0.025em;
+
+  background: #379aff;
+  padding: 18px 1.5 11px;
+  text-align: center;
+  cursor: pointer;
+  border: 0;
+  border-radius: 2px;
+  min-width: 120px;
+  overflow: hidden;
+
+  position: absolute;
+  top: 60%;
+  right: 5%;
+  transform: translate(-50%, -50%);
+}
+
+#best span {
+  display: block;
+  position: relative;
+  z-index: 10;
+}
+
+#best:after,
+#best:before {
+  padding: 18px 0 11px;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: calc(-100% - 30px);
+  height: calc(100% - 29px);
+  width: calc(100% + 20px);
+  color: #fff;
+  border-radius: 2px;
+  transform: skew(-25deg);
+}
+
+#best:after {
+  background: #fff;
+  transition: left 0.8s cubic-bezier(0.86, 0, 0.07, 1) 0.2s;
+  z-index: 0;
+  opacity: 0.8;
+}
+
+#best:before {
+  background: #e21919;
+  z-index: 5;
+  transition: left 1s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+#best:hover:after {
+  left: calc(0% - 10px);
+  transition: left 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+#best:hover:before {
+  left: calc(0% - 10px);
+  transition: left 1s cubic-bezier(0.86, 0, 0.07, 1);
 }

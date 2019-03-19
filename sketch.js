@@ -66,7 +66,7 @@ function toggleState() {
     // Go train some more
   } else {
     nextGeneration();
-    runBestButton.html('run best');
+    runBestButton.html('Run Best');
   }
 }
 
