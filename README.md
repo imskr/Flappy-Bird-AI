@@ -32,12 +32,13 @@ Artificial Intelligence based Flappy Bird Game
 * **Processing.js**
 * **Javascript**
 
-* **Explanation**
+### Explanation
 This Project uses neural-network & genetic algorithm for bird's brain.
 
 ![nn](assets/nn.png)
 
-### References
+* **Uses Genetic Algorithm explained** [here](https://medium.com/code-to-express/demystifying-genetic-algorithm-a91a57bd8c53)
 
+### References
 * **The Coding Train** [NN](https://github.com/CodingTrain/Toy-Neural-Network-JS)
 * **Demystifying RL** [Intel](https://www.intel.ai/demystifying-deep-reinforcement-learning/#gs.0lgpgr)
